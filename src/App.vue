@@ -2,7 +2,7 @@
   <div id="app">
     <img src="./assets/logo.png">
     <div>
-      <el-button @click="startHacking">Start</el-button>
+      <el-button @click="startHacking">开始</el-button>
     </div>
   </div>
 </template>
@@ -10,16 +10,17 @@
 <script>
 export default {
   methods: {
-    startHacking () {
+    startHacking() {
       this.$notify({
-        title: 'It works!',
-        type: 'success',
-        message: 'We\'ve laid the ground work for you. It\'s time for you to build something epic!',
+        title: "It works!",
+        type: "success",
+        message:
+          "We've laid the ground work for you. It's time for you to build something epic!",
         duration: 5000
-      })
+      });
     }
   }
-}
+};
 </script>
 
 <style>
