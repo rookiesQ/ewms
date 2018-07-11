@@ -3,13 +3,18 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import axios from 'axios'
+Vue.prototype.$ajax = axios
+
 //element
 import ElementUI from 'element-ui';
+import VueRouter from 'vue-router';
 import 'element-ui/lib/theme-chalk/index.css';
 
 Vue.config.productionTip = false
 //使用element
 Vue.use(ElementUI);
+Vue.use(VueRouter);
 
 /* eslint-disable no-new */
 new Vue({
