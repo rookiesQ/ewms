@@ -15,6 +15,7 @@
           @open="handleOpen"
           @close="handleClose"
           background-color="#eef1f6"
+          unique-opened='data_u'
           text-color="#333"
           active-text-color="#409EFF">
           <router-link to="/" >
@@ -43,7 +44,7 @@
               <i class="el-icon-menu"></i>
               <span slot="title">导航二</span>
             </template>
-            <el-menu-item index="2-1">选项1-修改测试</el-menu-item>
+            <el-menu-item index="2-1">选项1</el-menu-item>
             <el-menu-item index="2-2">选项2</el-menu-item>
             <el-menu-item index="2-3">选项3</el-menu-item>
             <el-menu-item index="2-4">选项4</el-menu-item>
