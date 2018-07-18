@@ -10,20 +10,27 @@
     <el-container>
       <el-aside>
         <el-menu
-          default-active="1-1"
+          default-active="0"
           class="el-menu-vertical-demo"
           @open="handleOpen"
           @close="handleClose"
           background-color="#eef1f6"
           text-color="#333"
-          unique-opened="true"
           active-text-color="#409EFF">
+          <router-link to="/" >
+            <el-menu-item index="0">
+              <i class="el-icon-loading"></i>
+              <span slot="title">首页</span>
+            </el-menu-item>
+          </router-link>
           <el-submenu index="1">
             <template slot="title">
               <i class="el-icon-location"></i>
               <span>导航一</span>
             </template>
-            <el-menu-item index="1-1">选项1</el-menu-item>
+            <router-link to="#/" >
+              <el-menu-item index="1-1">选项1</el-menu-item>
+            </router-link>
             <el-menu-item index="1-2">选项2</el-menu-item>
             <el-menu-item index="1-3">选项3</el-menu-item>
             <el-menu-item index="1-4">选项4</el-menu-item>
@@ -58,7 +65,9 @@
         </el-menu>
       </el-aside>
       <el-container>
-        <el-main>Main</el-main>
+        <el-main>
+          <router-view></router-view>
+        </el-main>
         <el-footer>Footer</el-footer>
       </el-container>
     </el-container>
@@ -70,7 +79,8 @@
     name: "HelloWorld",
     data() {
       return {
-        msg: "Welcome to Your Vue.js App"
+        msg: "Welcome to Your Vue.js App",
+        data_u:true
       };
     },
     methods: {
