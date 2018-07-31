@@ -15,7 +15,7 @@ export default new Router({
       children:[{
         path:'/',
         name:'test',
-        components: () => import('@/components/CommonHTML')
+        component: CommonHTML
       }]
     }
   ]

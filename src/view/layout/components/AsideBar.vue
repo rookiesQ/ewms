@@ -1,13 +1,5 @@
 <template>
-  <el-menu
-    default-active="1-2"
-    class="el-menu-vertical-demo"
-    @open="handleOpen"
-    @close="handleClose"
-    background-color="#eef1f6"
-    text-color="#333"
-    unique-opened="true"
-    active-text-color="#409EFF">
+  <el-menu default-active="1-2" class="el-menu-vertical-demo" @open="handleOpen" @close="handleClose" background-color="#eef1f6" text-color="#333" unique-opened='unique' active-text-color="#409EFF">
     <el-submenu index="1">
       <template slot="title">
         <i class="el-icon-location"></i>
@@ -51,7 +43,11 @@
 </template>
 <script>
 export default {
-  
+  data () {
+  	return {
+  		unique: false
+  	}
+  }
 }
 </script>
 <style lang="scss" scoped>

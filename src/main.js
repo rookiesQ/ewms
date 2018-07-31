@@ -16,10 +16,19 @@ Vue.config.productionTip = false
 Vue.use(ElementUI);
 Vue.use(VueRouter);
 
-/* eslint-disable no-new */
+/* eslint-disable no-new 
 new Vue({
   el: '#app',
   router,
   components: { App },
+  render: h => h(App),
   template: '<App/>'
+})
+*/
+new Vue({
+  el: '#app',
+  template: '<App/>',
+  component: App,
+  router,
+  render: h => h(App)
 })

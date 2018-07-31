@@ -15,7 +15,7 @@
           @open="handleOpen"
           @close="handleClose"
           background-color="#eef1f6"
-          unique-opened='data_u'
+          :unique-opened='data_u'
           text-color="#333"
           active-text-color="#409EFF">
           <router-link to="/" >
@@ -69,7 +69,6 @@
         <el-main>
           <router-view></router-view>
         </el-main>
-        <el-footer>Footer</el-footer>
       </el-container>
     </el-container>
   </el-container>
@@ -83,6 +82,9 @@
         msg: "Welcome to Your Vue.js App",
         data_u:true
       };
+    },
+    mounted () {
+    	console.log(this.data_u)
     },
     methods: {
       handleOpen(key, keyPath) {
@@ -141,8 +143,10 @@
     position: absolute;
     top: $Height;
     left: $Width;
-    bottom: 60px;
+    bottom: 0;
     right: 0;
+    padding:0;
+    box-sizing:border-box;
   }
   body>.el-container {
     margin-bottom: 40px;

@@ -8,7 +8,7 @@
         <aside-bar></aside-bar>
       </el-aside>
       <el-container>
-        <el-main>
+        <el-main class='main'>
           <router-view></router-view>
         </el-main>
         <el-footer>
@@ -33,4 +33,6 @@ export default {
   @import "src/view/layout/LayoutStyle.scss";
 
 </style>
-
+<style>
+.el-main{padding:0;}
+</style>
