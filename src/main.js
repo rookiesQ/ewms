@@ -3,8 +3,11 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import axios from 'axios'
-Vue.prototype.$ajax = axios
+import http from '@/http/http.js'
+import  VueQuillEditor from 'vue-quill-editor'
+
+Vue.use(VueQuillEditor)
+Vue.prototype.$axios = http
 
 //element
 import ElementUI from 'element-ui';

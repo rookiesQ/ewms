@@ -37,24 +37,24 @@
 			      	  <el-row class='font-size-13 graphic_message_row_head'>
 			      	  	<el-col :span='12' class='text-align-left'>
 			      	  		图文消息： 44/5000
-			      	  		<span class='font-size-18 color-999 cursor-pointer graphic_message_row_changeList'>
-				      	  		<i @click='changeList(graphic_message[0].index,0)' class='el-icon-menu'></i>
-				      	  		<i @click='changeList(graphic_message[0].index,1)' class='el-icon-document'></i>
+			      	  		<span class='color-999 cursor-pointer graphic_message_row_changeList'>
+				      	  		<i @click='changeList(graphic_message[0].index,0)' class='iconfont font-size-20 icon-caidan1'></i>
+				      	  		<i @click='changeList(graphic_message[0].index,1)' class='iconfont font-size-20 icon-caidan'></i>
 			      	  		</span>
 			      	  	</el-col>
-			      	  	<el-col :span='12' style='padding-right:16px;' class='text-align-right font-size-23 color-999'>
-			      	  		<i class='el-icon-refresh'></i>
-			      	  		<i class='el-icon-sort'></i>
-			      	  		<i class='el-icon-tickets'></i>
+			      	  	<el-col :span='12' style='padding-right:16px;' class='text-align-right color-999'>
+			      	  		<i class='iconfont icon-icon-refresh font-size-23 cursor-pointer'></i>
+			      	  		<i class='iconfont padding-horizontal-both-10 icon-paixu font-size-23 cursor-pointer'></i>
+			      	  		<i class='iconfont icon-piliangchuli font-size-28 cursor-pointer'></i>
 			      	  	</el-col>
-			      	  	
+
 			      	  </el-row>
 			      	  <!--详情页面-->
 			      	  <div v-show='graphic_message[0].showList'>
 				      	  <el-row class='font-size-13 graphic_message_row_editor'>
 				      	  	<el-col :span='12' class='text-align-left'>
-				      	  		<span>批量编辑&nbsp;1</span> 
-				      	  		<span class='select_all color-33cccc cursor-pointer'>全选</span> 
+				      	  		<span>批量编辑&nbsp;1</span>
+				      	  		<span class='select_all color-33cccc cursor-pointer'>全选</span>
 				      	  		<span class='color-33cccc cursor-pointer'>反选</span>
 				      	  	</el-col>
 				      	  	<el-col :span='12' class='text-align-right'>
@@ -62,7 +62,7 @@
 				      	  		<span class='color-33cccc cursor-pointer graphic_message_row_allot'>分配</span>
 				      	  		<span class='color-33cccc cursor-pointer'>删除</span>
 				      	  		<span class='iconfont icon-shanchu cursor-pointer'></span>
-				      	  		
+
 				      	  	</el-col>
 				      	  </el-row>
 				      	  <!--列表页面-->
@@ -83,9 +83,10 @@
 						          <el-row>
 						          	<el-col :span='12' class='text-align-left font-size-13 color-999'>更新于07/23</el-col>
 						          	<el-col :span='12' class='text-align-right color-999'>
-						          		<i class="iconfont icon-xiugaiziliao"></i>
-										<i class="el-icon-share"></i>
-						          		<i class='iconfont icon-delete color-999'></i>
+						          		<i class='iconfont icon-fuzhilianjie color-999 cursor-pointer'></i>
+						          		<i class="iconfont icon-xiugaiziliao color-999 cursor-pointer"></i>
+										<i class="iconfont icon-copy color-999 cursor-pointer"></i>
+						          		<i class='iconfont icon-delete color-999 cursor-pointer'></i>
 						          	</el-col>
 						          </el-row>
 						        </div>
@@ -109,9 +110,12 @@
 								<el-table-column align='center' prop="operaData" label="操作日期"></el-table-column>
 								<el-table-column align='center' prop="opera" width="250" label="操作">
 									<template slot-scope="scope">
-										
-										<i class="el-icon-share"></i>
-						          		
+
+										<i class='iconfont icon-fuzhilianjie color-999 cursor-pointer'></i>
+						          		<i class="iconfont icon-xiugaiziliao color-999 cursor-pointer"></i>
+										<i class="iconfont icon-copy color-999 cursor-pointer"></i>
+						          		<i class='iconfont icon-delete color-999 cursor-pointer'></i>
+
 									</template>
 								</el-table-column>
 							</el-table>
@@ -152,16 +156,17 @@
 			      	  	<el-col :span='12' class='text-align-left'>
 			      	  		图文消息： 44/5000
 			      	  		<span class='font-size-18 color-999 cursor-pointer graphic_message_row_changeList'>
-				      	  		<i @click='changeList(graphic_message[1].index,0)' class='el-icon-menu'></i>
-				      	  		<i @click='changeList(graphic_message[1].index,1)' class='el-icon-document'></i>
+
+				      	  		<i @click='changeList(graphic_message[1].index,0)' class='iconfont font-size-20 icon-caidan1'></i>
+				      	  		<i @click='changeList(graphic_message[1].index,1)' class='iconfont font-size-20 icon-caidan'></i>
 			      	  		</span>
 			      	  	</el-col>
 			      	  	<el-col :span='12' style='padding-right:16px;' class='text-align-right font-size-23 color-999'>
-			      	  		<i class='el-icon-refresh'></i>
-			      	  		<i class='el-icon-sort'></i>
-			      	  		<i class='el-icon-tickets'></i>
+			      	  		<i class='iconfont icon-icon-refresh font-size-23 cursor-pointer'></i>
+			      	  		<i class='iconfont padding-horizontal-both-10 icon-paixu font-size-23 cursor-pointer'></i>
+			      	  		<i class='iconfont icon-piliangchuli font-size-28 cursor-pointer'></i>
 			      	  	</el-col>
-			      	  	
+
 			      	  </el-row>
 			      	  <el-row>
 			      	  	<el-col :span='24' class='text-align-center cursor-pointer font-size-18 color-999'>
@@ -192,8 +197,8 @@
 			      	  <div v-show='graphic_message[1].showList'>
 				      	  <el-row class='font-size-13 graphic_message_row_editor'>
 				      	  	<el-col :span='12' class='text-align-left'>
-				      	  		<span>批量编辑&nbsp;1</span> 
-				      	  		<span class='select_all color-33cccc cursor-pointer'>全选</span> 
+				      	  		<span>批量编辑&nbsp;1</span>
+				      	  		<span class='select_all color-33cccc cursor-pointer'>全选</span>
 				      	  		<span class='color-33cccc cursor-pointer'>反选</span>
 				      	  	</el-col>
 				      	  	<el-col :span='12' class='text-align-right'>
@@ -201,7 +206,7 @@
 				      	  		<span class='color-33cccc cursor-pointer graphic_message_row_allot'>分配</span>
 				      	  		<span class='color-33cccc cursor-pointer'>删除</span>
 				      	  		<span class='iconfont icon-shanchu cursor-pointer'></span>
-				      	  		
+
 				      	  	</el-col>
 				      	  </el-row>
 				      	  <!--列表页面-->
@@ -215,9 +220,9 @@
 							          <el-row>
 							          	<el-col :span='16' class='text-align-left font-size-13 color-999'>新会员等级规则公布</el-col>
 							          	<el-col :span='8' class='text-align-right color-999'>
-							          		<i class="iconfont icon-xiugaiziliao"></i>
-											<i class="el-icon-share"></i>
-							          		<i class='iconfont icon-delete color-999'></i>
+
+											<i class="el-icon-more cursor-pointer font-size-20"></i>
+
 							          	</el-col>
 							          </el-row>
 							        </div>
@@ -232,18 +237,18 @@
 								<el-table-column align='center' type="selection" label="" width="50"></el-table-column>
 								<el-table-column align='left' prop="name" label="名称" width='580'>
 									<template slot-scope="scope">
-										<img :id="1" class="update-icon" style='display:inline-block;width:108px;height:60px;'  src="/static/image/login/bg.jpg" />
-										<span class='graphic_message_picture_level'>会员等级1.png</span>
+										<img :id="1" class="update-icon" style='display:block;float:left;width:108px;height:60px;'  :src="scope.row.name.picURL" />
+										<span style='display:block;height:60px;float:left;line-height:60px;margin-left:20px;'>{{scope.row.name.picName}}</span>
 									</template>
 								</el-table-column>
 								<el-table-column align='center' prop="operaData" label="操作日期"></el-table-column>
 								<el-table-column align='center' prop="opera" width="250" label="操作">
 									<template slot-scope="scope">
-										
+
 										<span class='font-size-12 color-33cccc cursor-pointer'>重命名</span>
 										<span class='font-size-12 color-33cccc cursor-pointer'>移动分组</span>
 										<span class='font-size-12 color-33cccc cursor-pointer'>删除</span>
-						          		
+
 									</template>
 								</el-table-column>
 							</el-table>
@@ -290,11 +295,11 @@
 							<el-table-column align='center' prop="operaData" label="操作日期"></el-table-column>
 							<el-table-column align='center' prop="opera" width="250" label="操作">
 								<template slot-scope="scope">
-									
+
 									<span class='font-size-12 color-33cccc cursor-pointer'>重命名</span>
 									<span class='font-size-12 color-33cccc cursor-pointer'>移动分组</span>
 									<span class='font-size-12 color-33cccc cursor-pointer'>删除</span>
-					          		
+
 								</template>
 							</el-table-column>
 						</el-table>
@@ -322,11 +327,11 @@
 	        	<button :class='{"tab_active": !isLocal}' @click='changeLocal(1)' class='graphic_change_tab_button'>微信</button>
 	         </div>
        </div>
-      
+
     </div>
        <!---->
     </div>
-   
+
 </template>
 <script>
  export default {
@@ -388,9 +393,11 @@
           opera: '操作'
         }],
         column_picture:[{
-          	name: '王小虎',
           	operaData: '2018-10-22',
-          	opera: '操作'
+          	name: {
+          		picURL: '/static/image/login/bg.jpg',
+          		picName: '图片一'
+          	}
         }],
         column_voice:[{
           	name: '王小虎',
@@ -404,6 +411,7 @@
     methods: {
     	handleClick(tab,event) {
     		console.log(tab, event);
+    		console.log(tab.index)
     	},
     	handleSizeChange(val) {
 	        console.log(`每页 ${val} 条`);
@@ -412,7 +420,7 @@
 	        console.log(`当前页: ${val}`);
 	    },
 	    submitSearch() {
-	    	
+
 	    },
 	    changeList(tabIndex,index) {
 	    	if (index == 0) {
@@ -425,7 +433,7 @@
 	    	console.log(val)
 	    },
 	    changeLocal(index) {
-	    	
+
 	    	if (index == 0) {
 	    		this.isLocal = true
 	    		this.graphic_message.forEach((li) => {
@@ -443,8 +451,7 @@
   };
 </script>
 <style scoped>
-*{margin:0;padding:0;}
-@import 'http://at.alicdn.com/t/font_561828_6yn38xi47yr.css';
+@import"//at.alicdn.com/t/font_561828_lo3g0za40b.css";
 .graphic_message_head{width:100%;height:77px;background:#fff;position:relative;padding-left:84px;box-sizing:border-box;padding-top:14px;padding-bottom:15px;}
 .graphic_message_head_img{position:absolute;top:14px;left:23px;display:block;width:50px;height:50px;border-radius:6px;}
 .graphic_message_setting{width:118px;height:50px;position:absolute;top:14px;right:0;line-height:50px;text-align:center;vertical-align:middle;font-size:23px;}
@@ -455,52 +462,52 @@
 .weChart_graphic_message_tab{
 }
 .wechart_type{display:inline-block;padding:0 7px;padding-top:2px;padding-bottom:1px;font-size:12px;border:1px solid #33CCCC; color:#33CCCC;margin-top:5px;}
-.flexbox-vertical {  
-	display: -webkit-box; 
-	display: -webkit-flex; 
-	display: flex; 
-	-webkit-box-orient: vertical; 
-	-webkit-flex-flow: column; 
-	flex-flow: column; 
-	height: 100%; 
+.flexbox-vertical {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-flex-flow: column;
+	flex-flow: column;
+	height: 100%;
 	-webkit-flex-direction: column;
-	flex-direction: column; 
-	box-sizing: border-box; 
-	-webkit-box-sizing: 
+	flex-direction: column;
+	box-sizing: border-box;
+	-webkit-box-sizing:
 	border-box; }
 .flexbox-horizontal {
-	display: -webkit-box; 
-	display: -webkit-flex; 
-	display: flex; 
-	-webkit-box-orient: horizontal; 
-	-webkit-flex-flow: row; 
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-flex-flow: row;
 	flex-flow: row; width: 100%;
 	-webkit-flex-direction: row;
 	flex-direction: row;
-	box-sizing: border-box; 
-	-webkit-box-sizing: border-box; 
-	-webkit-box-flex: 1;     
-    display: -moz-box;         
-    display: -ms-flexbox;     
-    display: -webkit-flex;    
-    display: flex;
-    display: -webkit-box; 
-    display: -moz-box; 
-    display: -ms-flexbox; 
-    display: -webkit-flex; 
-    display: flex; 
- }
-.flex-item { 
-	-webkit-box-flex: 1;
-	-webkit-flex: 1; 
-	flex: 1; 
-	box-sizing: border-box; 
+	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
-    -webkit-box-flex: 1;      
-    -moz-box-flex: 1;         
-    -webkit-flex: 1;         
-    -ms-flex: 1;              
-    flex: 1;                  
+	-webkit-box-flex: 1;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+ }
+.flex-item {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	flex: 1;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
  }
 .graphic_message{padding-top:10px;padding-left:32px;box-sizing:border-box;background:#f2f2f2;height:100%;width:100%;padding-right:10px;}
  .graphic_message .graphic_change_tab{
@@ -521,8 +528,9 @@
  	font-size:12px;
  	color:#fff;
  	cursor:pointer;
+   z-index:10;
  }
-.color-999{color:#999;}
+.graphic_message .color-999{color:#999 !important;}
 .font-size-13{font-size:13px;}
 .font-szie-18{font-size:18px;}
 .color-33cccc{color:#33cccc;}
@@ -536,13 +544,17 @@
 .cursor-pointer{cursor:pointer;}
 .height-100{height:100%;}
 .graphic_message_page{height:60px;width:100%;}
-.font-size-23{font-size:23px;}
+.graphic_message .font-size-23{font-size:23px !important;}
+.graphic_message .font-size-20{font-size:20px !important;}
+.graphic_message .font-size-28{font-size:28px !important;}
 .color-red{color:#ff6666;}
 .font-size-18{font-size:18px;}
 .graphic_message_row_changeList{margin-left:14px;}
 .height-100{height:100%;}
+.padding-horizontal-both-10{padding-left:10px;padding-right:10px;}
 </style>
 <style>
+*{margin:0;padding:0;}
 .graphic_message .el-tabs__item.is-active {
     color: #000000;
 }
@@ -571,4 +583,5 @@
 .graphic_message .el-pagination .btn-prev, .el-pagination .el-pager li, .el-pagination .btn-next {
     border-radius: 0px !important;
 }
+.graphic_message .iconfont{color:#999;}
 </style>
